@@ -1,0 +1,184 @@
+
+html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width:100%;
+    display: flex; 
+    justify-content: space-between;
+    position: fixed;
+}
+
+.header {
+   width:100%;
+   justify-content: space-between;
+    }
+
+.header a {
+    font-family: 'Bebas Neue', sans-serif;
+    color: black;
+    font-size: 4vw;
+    display: inline-flex;
+    flex-direction: row;
+    padding-left: 24px;
+    padding-right: 18px;
+    background-color: white;
+    transition: all 0.5 ease-out;
+    
+
+}
+
+.header a:hover {
+    background-color: 573D2A;
+}
+
+.headline {
+    display: flex;
+    background-color: 231409;
+    padding: 20px;
+
+  }
+
+  .facephoto {
+    height: 700px;
+    background-image: url("../Images/Face.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 3;
+  }
+
+  .headerimage {
+    background-image: url("../Images/annie.png");
+    height: 2000px;
+    opacity: 85%;
+}
+
+  .background {
+    height: 4885px;
+    background-image: url("../Images/Rectangle.png");
+    background-position: center;
+    margin: 0%;
+  }
+
+  body {
+    background-color: 573D2A;
+    height: 3000px;
+}
+
+.tagline a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 100px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 1;
+}
+
+.introtext .p1, .p2, .p3 {
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 30px;
+    text-align: left;
+    font-weight: bolder;
+    margin-left: 900px;
+    margin-right: 100px;
+    padding-top: 75px;
+    color: white;
+    position: relative;
+}
+
+.introtext .p1 {
+    padding-top: 150px;
+}
+
+.circle {
+    background-image: url("../Images/Vector.png");
+    height: 1430px;
+    background-repeat: no repeat;
+    position: relative;
+    z-index: 2;
+}
+
+.footerimage {
+    display: flex;
+    align-items: flex-end;
+    background-image: url("../Images/footerpic2.png");
+    height: 4000px;
+    background-repeat: no-repeat;
+    position: relative;
+    top: -430px;
+    z-index: 1;
+}
+
+.footersquare {
+    background-image: url("../Images/Rec10.png");
+    padding-top: 200px;
+}
+
+.tagline2 {
+    display: block;
+    color: black;
+    text-decoration: none;
+    text-align: left;
+    font-weight: bolder;
+    font-size: 125px;
+    font-family: 'Bebas Neue', sans-serif;
+    line-height: 0.8;
+    margin-left: 100px;
+    margin-right: 700px;
+    margin-top: -50px;
+
+
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+  }
+
+  #heroGrid {
+    margin: 0px 5%;
+    margin-left: 250px;
+    display: grid;
+    min-height: 500px;
+    height: 40vh;
+    width: 35vh;
+    grid-template-rows: 50% 50% 100% 100%;
+    grid-template-columns: 30% 30% 150% 250%;
+    grid-template-areas:
+    "study1 study1 study1 p"
+    
+  }
+
+
+  p {
+    grid-area: p;
+    padding: 50px;
+    padding-top: 140px;
+    font-family: 'Inria Sans', sans-serif;
+    font-size: 15px;
+    color: black;
+
+  }
+
+  #study1 {
+    grid-area: study1;
+    background-image: url("../Images/pic1.png");
+    background-size:auto;
+    margin-top: 100px;
+  }
+  
+
+@media only screen and (max-width: 800px) {
+    .header a {
+        font-size: 3vw;
+    }
+    
+}
